@@ -46,9 +46,9 @@ const fetchQuestionsAndMakeCards = async () => {
   const questionIds = [];
 
   for (let i = 0; i < 3; i++) {
-    let randomQuestionIndex = Math.round(Math.random() * 20);
+    let randomQuestionIndex = Math.round(Math.random() * questions.length);
     while (questionIds.includes(randomQuestionIndex)) {
-      randomQuestionIndex = Math.round(Math.random() * 20);
+      randomQuestionIndex = Math.round(Math.random() * questions.length);
     }
 
     questionIds.push(randomQuestionIndex);
