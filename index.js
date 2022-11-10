@@ -18,7 +18,7 @@ const createCardHeader = (question) => {
   cardHeaderDiv.classList.add("card__header");
 
   const cardImage = document.createElement("img");
-  cardImage.src = `https://source.unsplash.com/random/640×480p?${question.keyword}`;
+  cardImage.src = `https://source.unsplash.com/random/640×480?${question.keyword}`;
 
   cardHeaderDiv.appendChild(cardImage);
 
